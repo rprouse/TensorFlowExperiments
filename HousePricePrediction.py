@@ -10,11 +10,11 @@ np.random.seed(42)
 house_size = np.random.randint(low=1000, high=3500, size=num_house)
 
 # generate house prices from the house size with random noise
-np.random.seed(42)
 house_price = house_size * 100.0 + np.random.randint(low=20000, high=70000, size=num_house)
 
 # plot the houses
-# plt.plot(house_size, house_price, "bx") # bx = blue x
+# plt.plot(house_size, house_price, ".")
+# plt.gcf().canvas.set_window_title("House Prices")
 # plt.ylabel("Price")
 # plt.xlabel("Size")
 # plt.show()
